@@ -1,15 +1,16 @@
 <?php
 /**
- * ALIPAY API: alipay.trade.create request
+ * ALIPAY API: alipay.trade.pay request
  *
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-26 17:05:00
  */
 namespace api\request;
-class AlipayTradeCreateRequest
+class AlipayTradePayRequest
 {
 	/** 
-	 * 商户通过该接口进行交易的创建下单
+	 * 用于在线下场景交易一次创建并支付掉
+修改路由策略到R
 	 **/
 	private $bizContent;
 
@@ -36,7 +37,7 @@ class AlipayTradeCreateRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.trade.create";
+		return "alipay.trade.pay";
 	}
 
 	public function setNotifyUrl($notifyUrl)

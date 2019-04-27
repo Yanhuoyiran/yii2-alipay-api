@@ -1,15 +1,15 @@
 <?php
 /**
- * ALIPAY API: alipay.trade.create request
+ * ALIPAY API: alipay.trade.customs.query request
  *
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-13 16:37:17
  */
 namespace api\request;
-class AlipayTradeCreateRequest
+class AlipayTradeCustomsQueryRequest
 {
 	/** 
-	 * 商户通过该接口进行交易的创建下单
+	 * 查询报关详细信息
 	 **/
 	private $bizContent;
 
@@ -36,7 +36,7 @@ class AlipayTradeCreateRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.trade.create";
+		return "alipay.trade.customs.query";
 	}
 
 	public function setNotifyUrl($notifyUrl)

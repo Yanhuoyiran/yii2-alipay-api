@@ -1,15 +1,16 @@
 <?php
 /**
- * ALIPAY API: alipay.trade.create request
+ * ALIPAY API: alipay.trade.precreate request
  *
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-03-08 15:29:11
  */
 namespace api\request;
-class AlipayTradeCreateRequest
+class AlipayTradePrecreateRequest
 {
 	/** 
-	 * 商户通过该接口进行交易的创建下单
+	 * 收银员通过收银台或商户后台调用支付宝接口，生成二维码后，展示给伤脑筋户，由用户扫描二维码完成订单支付。
+修改路由策略到R
 	 **/
 	private $bizContent;
 
@@ -36,7 +37,7 @@ class AlipayTradeCreateRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.trade.create";
+		return "alipay.trade.precreate";
 	}
 
 	public function setNotifyUrl($notifyUrl)

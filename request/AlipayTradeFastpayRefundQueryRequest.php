@@ -1,15 +1,15 @@
 <?php
 /**
- * ALIPAY API: alipay.trade.create request
+ * ALIPAY API: alipay.trade.fastpay.refund.query request
  *
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2019-01-21 10:47:38
  */
 namespace api\request;
-class AlipayTradeCreateRequest
+class AlipayTradeFastpayRefundQueryRequest
 {
 	/** 
-	 * 商户通过该接口进行交易的创建下单
+	 * 商户可使用该接口查询自已通过alipay.trade.refund提交的退款请求是否执行成功。
 	 **/
 	private $bizContent;
 
@@ -36,7 +36,7 @@ class AlipayTradeCreateRequest
 
 	public function getApiMethodName()
 	{
-		return "alipay.trade.create";
+		return "alipay.trade.fastpay.refund.query";
 	}
 
 	public function setNotifyUrl($notifyUrl)
